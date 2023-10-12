@@ -38,3 +38,107 @@ body {
 .gallery_item img {
     width: 40%;
 }
+
+.hidden-block {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    height: fit-content;
+}
+
+.hidden-block:hover {
+    opacity: 1;
+}
+
+.hidden-block a {
+    display: block;
+    opacity: 0;
+    width: 0;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: #00bfff;
+    font-weight: bold;
+    overflow: hidden;
+    transition: width 0.3s, opacity 0.3s;
+    text-justify: auto;
+    text-align: center;
+}
+
+.hidden-block:hover a {
+    opacity: 1;
+    width: 13.5rem;
+}
+
+#br_text {
+    display: inline-block;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    background: #1b370f;
+    border: 3px solid #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(135deg, #1b370f 0%, #53af6c 100%);
+    text-transform: capitalize;
+    text-shadow: none;
+    font-style: normal;
+}
+
+#br_number {
+    font-size: 6px;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    top: 4px;
+    right: 5px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+#ba_text {
+    display: inline-block;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    background: #1b370f;
+    border: 3px solid #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1px;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(135deg, #1b370f 0%, #53af6c 100%);
+    text-transform: capitalize;
+    text-shadow: none;
+    font-style: normal;
+}
+
+#ba_number {
+    font-size: 6px;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    top: 4px;
+    right: 5px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: right;
+}
